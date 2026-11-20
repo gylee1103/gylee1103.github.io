@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gayoung Lee</title>
+  <meta name="description" content="Gayoung Lee, Research Scientist at NAVER AI Lab.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #ffffff; --fg: #1d1d1f; --muted: #6e6e73; --line: #e5e5ea;
+      --link: #0b57d0; --venue: #b3261e;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg: #111113; --fg: #f2f2f4; --muted: #a1a1a6; --line: #2c2c30;
+              --link: #8ab4f8; --venue: #f28b82; }
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--fg);
+           font: 16px/1.65 Inter, system-ui, -apple-system, sans-serif; }
+    main { max-width: 860px; margin: 0 auto; padding: 56px 20px 80px; }
+    a { color: var(--link); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    header { display: flex; gap: 36px; align-items: center; flex-wrap: wrap; }
+    .photo { width: 170px; height: 220px; border-radius: 12px; object-fit: cover;
+             object-position: center 20%; background: var(--line); flex: none; }
+    .intro { flex: 1; min-width: 260px; }
+    h1 { font-size: 2rem; margin: 0 0 2px; letter-spacing: -0.01em; }
+    .role { color: var(--muted); margin: 0 0 14px; }
+    .bio { margin: 0 0 14px; }
+    .links { display: flex; gap: 18px; flex-wrap: wrap; font-weight: 500; }
+    h2 { font-size: 1.15rem; margin: 48px 0 16px; padding-bottom: 8px;
+         border-bottom: 1px solid var(--line); }
+    ul.exp { list-style: none; padding: 0; margin: 0; }
+    ul.exp li { display: flex; justify-content: space-between; gap: 16px;
+                flex-wrap: wrap; padding: 4px 0; }
+    ul.exp .when { color: var(--muted); }
+    .pub { margin-bottom: 22px; }
+    .pub .title { font-weight: 600; }
+    .pub .authors { color: var(--muted); font-size: 0.95rem; }
+    .pub .authors b { color: var(--fg); font-weight: 600; }
+    .pub .meta { font-size: 0.95rem; }
+    .pub .venue { color: var(--venue); font-weight: 600; margin-right: 10px; }
+    footer { margin-top: 64px; color: var(--muted); font-size: 0.85rem; }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <img class="photo" src="photo.jpg" alt="Gayoung Lee">
+    <div class="intro">
+      <h1>Gayoung Lee</h1>
+      <p class="role">Research Scientist, NAVER AI Lab</p>
+      <p class="bio">
+        I am a research scientist at <a href="https://www.facebook.com/NAVERAILAB">NAVER AI Lab</a>.
+        I received my B.S. and M.S. degrees from KAIST, where I was advised by
+        Prof. <a href="http://sites.google.com/site/siitkaist/professor">Junmo Kim</a> and
+        Prof. <a href="http://gdriv.es/yuwing">Yu-Wing Tai</a>.
+        My research interest is improving and using generative models for image creation.
+      </p>
+      <div class="links">
+        <a href="mailto:gayoung.lee@navercorp.com">Email</a>
+        <a href="https://scholar.google.com/citations?user=8crrmy8AAAAJ">Google Scholar</a>
+        <a href="https://github.com/gylee1103">GitHub</a>
+      </div>
+    </div>
+  </header>
+
+  <h2>Experience</h2>
+  <ul class="exp">
+    <li><span>Research Scientist, NAVER AI Lab</span><span class="when">Aug. 2020 &ndash; Present</span></li>
+    <li><span>Research Scientist, NAVER CLOVA OCR</span><span class="when">Sep. 2019 &ndash; Aug. 2020</span></li>
+    <li><span>Research Scientist, NAVER WEBTOON Corp.</span><span class="when">Aug. 2017 &ndash; Aug. 2019</span></li>
+  </ul>
+
+  <h2>Selected Publications</h2>
+
+  <div class="pub">
+    <div class="title">Pygmalion Effect in Vision: Image-to-Clay Translation for Reflective Geometry Reconstruction</div>
+    <div class="authors"><b>Gayoung Lee</b>, Junho Kim, Jin-Hwa Kim, Junmo Kim</div>
+    <div class="meta"><span class="venue">NeurIPS 2026</span>
+      <a href="https://arxiv.org/abs/2511.21098">paper</a> &middot;
+      <a href="https://gylee1103.github.io/pygmalion-neurips26/">project page</a></div>
+  </div>
+
+  <div class="pub">
+    <div class="title">StyleKeeper: Prevent Content Leakage using Negative Visual Query Guidance</div>
+    <div class="authors">Jaeseok Jeong, Junho Kim, <b>Gayoung Lee</b>, Yunjey Choi, Youngjung Uh</div>
+    <div class="meta"><span class="venue">ICCV 2025</span>
+      <a href="https://openaccess.thecvf.com/content/ICCV2025/papers/Jeong_StyleKeeper_Prevent_Content_Leakage_using_Negative_Visual_Query_Guidance_ICCV_2025_paper.pdf">paper</a> &middot;
+      <a href="https://github.com/naver-ai/StyleKeeper">project page</a></div>
+  </div>
+
+  <div class="pub">
+    <div class="title">Enhancing Creative Generation on Stable Diffusion-based Models</div>
+    <div class="authors">Jiyeon Han, Dahee Kwon, <b>Gayoung Lee</b>, Junho Kim, Jaesik Choi</div>
+    <div class="meta"><span class="venue">CVPR 2025</span>
+      <a href="https://openaccess.thecvf.com/content/CVPR2025/papers/Han_Enhancing_Creative_Generation_on_Stable_Diffusion-based_Models_CVPR_2025_paper.pdf">paper</a></div>
+  </div>
+
+  <div class="pub">
+    <div class="title">Direct Unlearning Optimization for Robust and Safe Text-to-Image Models</div>
+    <div class="authors">Yong-Hyun Park, Sangdoo Yun, Jin-Hwa Kim, Junho Kim, Geonhui Jang, Yonghyun Jeong, Junghyo Jo, <b>Gayoung Lee</b></div>
+    <div class="meta"><span class="venue">NeurIPS 2024</span>
+      <a href="https://arxiv.org/pdf/2407.21035">paper</a> &middot;
+      <a href="https://github.com/naver-ai/DUO">project page</a></div>
+  </div>
+
+  <div class="pub">
+    <div class="title">3D-aware Blending with Generative NeRFs</div>
+    <div class="authors">Hyunsu Kim, <b>Gayoung Lee</b>, Yunjey Choi, Jin-Hwa Kim, Jun-Yan Zhu</div>
+    <div class="meta"><span class="venue">ICCV 2023</span>
+      <a href="https://openaccess.thecvf.com/content/ICCV2023/papers/Kim_3D-aware_Blending_with_Generative_NeRFs_ICCV_2023_paper.pdf">paper</a> &middot;
+      <a href="https://github.com/naver-ai/BlendNeRF">project page</a></div>
+  </div>
+
+  <div class="pub">
+    <div class="title">Generator Knows What Discriminator Should Learn in Unconditional GANs</div>
+    <div class="authors"><b>Gayoung Lee</b>, Hyunsu Kim, Junho Kim, Seonghyeon Kim, Jung-Woo Ha, Yunjey Choi</div>
+    <div class="meta"><span class="venue">ECCV 2022</span>
+      <a href="https://arxiv.org/pdf/2207.13320">paper</a> &middot;
+      <a href="https://github.com/naver-ai/GGDR">project page</a></div>
+  </div>
+
+  <div class="pub">
+    <div class="title">Few-shot Compositional Font Generation with Dual Memory</div>
+    <div class="authors">Junbum Cha, Sanghyuk Chun, <b>Gayoung Lee</b>, Bado Lee, Seonghyeon Kim, Hwalsuk Lee</div>
+    <div class="meta"><span class="venue">ECCV 2020</span>
+      <a href="https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123640715.pdf">paper</a> &middot;
+      <a href="https://github.com/clovaai/dmfont">project page</a></div>
+  </div>
+
+  <div class="pub">
+    <div class="title">Unpaired Sketch-to-Line Translation via Synthesis of Sketches</div>
+    <div class="authors"><b>Gayoung Lee</b>, Dohyun Kim, Youngjoon Yoo, Dongyoon Han, Jung-Woo Ha, Jaehyuk Chang</div>
+    <div class="meta"><span class="venue">SIGGRAPH Asia 2019 Technical Briefs</span>
+      <a href="https://www.gwern.net/docs/ai/anime/danbooru/2019-lee.pdf">paper</a></div>
+  </div>
+
+  <div class="pub">
+    <div class="title">ELD-Net: An Efficient Deep Learning Architecture for Accurate Saliency Detection</div>
+    <div class="authors"><b>Gayoung Lee</b>, Yu-Wing Tai, Junmo Kim</div>
+    <div class="meta"><span class="venue">TPAMI 2017</span>
+      <a href="https://ieeexplore.ieee.org/document/8006306">paper</a> &middot;
+      <a href="https://github.com/gylee1103/ELDNet">project page</a></div>
+  </div>
+
+  <div class="pub">
+    <div class="title">Deep Saliency with Encoded Low Level Distance Map and High Level Features</div>
+    <div class="authors"><b>Gayoung Lee</b>, Yu-Wing Tai, Junmo Kim</div>
+    <div class="meta"><span class="venue">CVPR 2016</span>
+      <a href="http://arxiv.org/abs/1604.05495">paper</a> &middot;
+      <a href="https://github.com/gylee1103/SaliencyELD">project page</a></div>
+  </div>
+
+  <footer>Last updated: November 2026</footer>
+</main>
+</body>
+</html>
